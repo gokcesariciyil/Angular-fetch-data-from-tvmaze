@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="border">
+    <ul class="navbar">
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="/About">About</a>
+      </li>
+    </ul>
+    <div class="batman-tv-show-list">
+      <h1>Batman TV Shows</h1>
+      <ul class="batman-list" *ngFor="let item of data | keyvalue">
+        <li><a [routerLink]="['/detail', item.key]">{{item.value}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br />
+<router-outlet></router-outlet>

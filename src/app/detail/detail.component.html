@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="border">
+    <ul class="navbar">
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="/About">About</a>
+      </li>
+    </ul>
+    <div class="row">
+      <div class="col-md-3">
+        <img src="{{data.image.medium}}">
+      </div>
+      <div class="col-md-6">
+        <div class="content">{{data.summary}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<router-outlet></router-outlet>
